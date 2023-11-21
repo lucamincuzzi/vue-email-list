@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <ul>
-            <li v-if="emailsList.length === 11" v-for="(email, index) in emailsList">{{ email }}</li>
+            <li v-show="emailsList.length === 11" v-for="(email, index) in emailsList">{{ email }}</li>
         </ul>
     </div>
     <!-- Scripts -->
