@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Custom style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Vue Email List</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-        <ul>
-            <li v-show="emailsList.length === 10" v-for="(email, index) in emailsList">{{ email }}</li>
-        </ul>
+      <ul>
+        <li
+          v-show="emailsList.length === 10"
+          v-for="(email, index) in emailsList"
+        >
+          {{ email }}
+        </li>
+      </ul>
     </div>
     <!-- Scripts -->
-        <!-- Vue -->
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <!-- Axios -->
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <!-- Custom script -->
-        <script src="js/script.js"></script>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Custom script -->
+    <script src="js/script.js"></script>
     <!-- /Scripts -->
-</body>
+  </body>
 </html>
