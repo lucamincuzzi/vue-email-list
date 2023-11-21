@@ -8,7 +8,7 @@ createApp({
     },
     methods: {
      generateEmails() {
-        for(i = 0; i < 9; i++) {
+        for(i = 0; i < 10; i++) {
             axios
             .get("https://flynn.boolean.careers/exercises/api/random/mail")
             .then((resp) => {
@@ -18,7 +18,7 @@ createApp({
                 };
             })
         }
-     }   
+     },
     },
     created() {
         console.log("App renderizzata");
